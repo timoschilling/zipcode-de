@@ -19,11 +19,6 @@ module ZipCode
     end
     private :row_to_h
 
-    # def row_clean(row)
-    #   super.map(&:upcase)
-    # end
-    # private :row_clean
-
     def data_source
       path = 'vendor/data/data.csv'
       File.expand_path(File.join(File.dirname(__FILE__), '..', path))
